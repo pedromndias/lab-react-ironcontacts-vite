@@ -1,42 +1,81 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  width: 400px;
+  margin: 30px auto;
+  border: 5px solid lightskyblue;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: blanchedalmond;
+  text-shadow: 2px 2px lightgray;
+  color: cadetblue;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table {
+  width: 900px;
+  margin: 30px auto;
+  border: 5px solid lightskyblue;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: blanchedalmond;
+  text-shadow: 2px 2px lightgray;
+  font-size: 1.2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+img {
+  width: 60px;
+  border-radius: 20px;
+  border: 4px solid lightgray;
 }
 
-.card {
-  padding: 2em;
+button {
+  color: rgb(119, 115, 115);
+  background-color: lightskyblue;
+  border: 1px solid rgb(119, 115, 115);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto 20px;
+  font-size: 1.1rem;
 }
 
-.read-the-docs {
-  color: #888;
+
+button:hover {
+  background-color: rgb(2, 2, 164);
+  color: white;
+}
+button.disabled {
+  background-color: #dddddd;
+  color: #888888;
+  cursor: not-allowed; 
+}
+
+.button-delete {
+  background-color: crimson;
+  color: aliceblue;
+}
+.button-delete:hover {
+  background-color: red;
+  color: white;
+}
+
+.table-row {
+  background-color: rgb(252, 207, 152);
+}
+.table-row:hover {
+  background-color: rgb(247, 173, 83);
+}
+
+.success-message {
+  color: #28a745;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
